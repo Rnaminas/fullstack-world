@@ -1,0 +1,26 @@
+form {
+    display: flex;
+}
+button {
+    text-transform: uppercase;
+    cursor: pointer;
+    width: fit-content;
+}
+input[type="text"] {
+    width: 100%;
+    border: 2px solid #2661c6;
+    border-radius: 3px;
+}
+
+input,
+button {
+    color: green;
+    padding: 0 10px;
+    height: 2em;
+    display: block;
+}
+
+input:hover,
+button:hover {
+    color: red;
+}

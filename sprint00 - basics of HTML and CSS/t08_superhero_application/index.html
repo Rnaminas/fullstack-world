@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Superhero application</title>
+    <meta name="description" content="t08. Superhero application">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Superhero Form</h1>
+    <form method="post">
+        <fieldset>
+            <legend>About the superhero</legend>
+            <ul class="list-choices">
+                <li>
+                    <label for="real_name">Real Name</label>
+                    <input type="text" name="real_name" id="real_name" placeholder="Superhero real name" required>
+                </li>
+                <li>
+                    <label for="superhero_alias">Superhero alias</label>
+                    <input type="text" name="alias" id="superhero_alias" placeholder="Superhero real name">
+                </li>
+                <li>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" min="1" max="999" step="1">
+                </li>
+            </ul>
+            <p>
+                <label for="about_text">About</label>
+                <textarea name="text" rows="5" cols="70" id="about_text" maxlength="500" placeholder="Information about the superhero, max 500 symbols"></textarea>
+            </p>
+            <p>
+                <label for="photo">Photo</label>
+                <input type="file" name="text" id="photo" accept="image/*">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Powers</legend>
+            <ul class="list-choices">
+                <li>
+                    <input type="checkbox" name="power" id="power_telekinesis">
+                    <label for="power_telekinesis">Telekinesis</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="power" id="super_strength">
+                    <label for="super_strength">Super strength or speed</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="power" id="power_shapeshifting">
+                    <label for="power_shapeshifting">Shapeshifting</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="power" id="power_flight">
+                    <label for="power_flight">Flight</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="power" id="power_control">
+                    <label for="power_control">Elemental control</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="power" id="power_other">
+                    <label for="power_other">Other</label>
+                </li>
+            </ul>
+            <p>
+                <label for="level">Level of control:</label>
+                <input type="range" name="level" id="level" min="0" max="10" step="1" value="1">
+                <output for="level"></output>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Origin of Powers</legend>
+            <ul class="list-choices">
+                <li>
+                    <input type="radio" name="origin_power" id="origin_unknown">
+                    <label for="power_telekinesis">Unknown</label>
+                </li>
+                <li>
+                    <input type="radio" name="origin_power" id="origin_lab">
+                    <label for="origin_lab">Freak lab accident</label>
+                </li>
+                <li>
+                    <input type="radio" name="origin_power" id="origin_ancient_wise">
+                    <label for="origin_ancient_wise">Chosen by an ancient wise being</label>
+                </li>
+                <li>
+                    <input type="radio" name="origin_power" id="origin_human">
+                    <label for="origin_human">The superhero is not human</label>
+                </li>
+                <li>
+                    <input type="radio" name="origin_power" id="origin_other">
+                    <label for="origin_other">Other</label>
+                </li>
+            </ul>
+        </fieldset>
+        <button type="reset">Clear</button>
+        <button type="submit">Send</button>
+    </form>
+
+</body>
+</html>

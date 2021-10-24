@@ -1,0 +1,47 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.date {
+    font-weight: 700;
+    font-size: 1.5em;
+    background: #4095b5;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.temperature {
+    font-weight: 400;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.list-weather {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    column-gap: 10px;
+}
+
+.list-weather__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.list-weather__item:hover {
+    box-shadow: 1px 5px 10px 5px #b6b6b6;
+}

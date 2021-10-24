@@ -1,0 +1,70 @@
+h1 {
+    background: red;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    margin: auto;
+    width: fit-content;
+}
+
+nav > ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+ul li:hover > a, ul li:focus > a {
+    background: red;
+    color: white;
+}
+
+ul > li > .dropdown {
+    position: relative;
+}
+
+ul > li:hover > .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.dropdown > li:hover > .dropdown {
+    position: absolute;
+    left: 0;
+    top:0;
+    background: #8075b7;
+    transform: translateX(100%);
+}
+
+
+ul li {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    min-width: 250px;
+
+}
+
+ul li a {
+    padding: 20px 40px;
+    background: #8d8d8d;
+    color: black;
+    font-size: 20px;
+    display: block;
+}
+
+
+.dropdown {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown li {
+    display: block;
+}

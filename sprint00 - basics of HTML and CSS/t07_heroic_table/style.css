@@ -1,0 +1,53 @@
+table {
+    border: 4px;
+    background: linear-gradient(to right, #6e0000, antiquewhite);
+    border-style: solid;
+    border-color: #000000;
+    border-collapse: collapse;
+}
+
+table th {
+    text-transform: uppercase;
+    color: #ffe369;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    background: rgba(110, 0, 0, 0.4);
+    border: 2px solid rgba(189, 195, 199, 0.05);
+}
+
+table tr:nth-child(2n+1) td:first-child {
+    background: rgba(143, 148, 251, 0.1);
+}
+
+table tr td:first-child {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 5px 50px;
+}
+
+table tr {
+    background: linear-gradient(to right, #6e0000, antiquewhite);
+}
+
+table tr td:nth-child(n+2) {
+    background: rgba(143, 148, 251, 0.1);
+    text-align: center;
+    padding: 5px 50px;
+    border: 2px rgba(189, 195, 199, 0.05);
+    color: midnightblue;
+    background: antiquewhite;
+}
+
+table a {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+table tr td.darkred-background {
+    color: white;
+    background: darkred;
+}

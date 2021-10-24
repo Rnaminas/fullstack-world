@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act Basic: Task 03 - Handbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Handbook</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="#html">HTML</a>
+                <ul>
+                    <li><a href="#h1">h1</a></li>
+                    <li><a href="#table">table</a></li>
+                    <li><a href="#hr">hr</a></li>
+                    <li><a href="#input">input</a></li>
+                    <li><a href="#button">button</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#css">CSS</a>
+                <ul>
+                    <li><a href="#background">background</a></li>
+                    <li><a href="#opacity">opacity</a></li>
+                    <li><a href="#line-height">line-height</a></li>
+                    <li><a href="#text-transform">text-transform</a></li>
+                    <li><a href="#border">border</a></li>
+                    <li><a href="#font-size">font-size</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#protocols">HTTP/HTTS</a>
+                <ul>
+                    <li><a href="#http-methods">http methods</a></li>
+                    <li><a href="#status-code">status code</a></li>
+                    <li><a href="#dns">dns</a></li>
+                    <li><a href="#identify-ip">Identifying google's IP</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section id="html">
+    <h2>HTML</h2>
+    <ul>
+        <li>
+            <article>
+                <h3 id="h1">h1</h3>
+                <p>HTML предлагает шесть заголовков разного уровня, которые показывают относительную важность секции,
+                    расположенной после заголовка. Так, тег &lt;h1> представляет собой наиболее важный заголовок первого
+                    уровня, а тег &lt;h6> служит для обозначения заголовка шестого уровня и является наименее
+                    значительным.</p>
+                <code>
+                    &lt;h1>Заголовок первого уровня&lt;/h1>
+                </code>
+                <h1>Title</h1>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="table">table</h3>
+                <p>defines an HTML table</p>
+                <code>
+                    &lt;table>&lt;/table>
+                </code>
+                <table>
+                    <tr>
+                        <th>Country</th>
+                        <th>Country</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3>hr</h3>
+                <p>draws a horizontal line</p>
+                <p class="code-example">
+                    <code>
+                        &lt;/hr>
+                    </code>
+                </p>
+                <hr>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque metus massa, efficitur eu
+                dignissim eu, congue non felis.
+                <hr>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="input">input</h3>
+                <p>Designed to create text fields, various buttons, radio buttons and checkboxes</p>
+                <code>
+                    &lt;input attributes>
+                </code>
+                <label for="name">Your name</label>
+                <input name="name" id="name" type="text">
+                <fieldset>
+                    <legend>Question</legend>
+                    <label for="answer1">answer</label>
+                    <input type="radio" name="answer1" id="answer1">
+                    <label for="answer2">answer</label>
+                    <input type="radio" name="answer2" id="answer2">
+                    <label for="answer3">answer</label>
+                    <input type="radio" name="answer3" id="answer3">
+                </fieldset>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="button">button</h3>
+                <p>Clickable button</p>
+                <code>
+                    &lt;button>Button&lt;/button>
+                </code>
+                <button type="button">Button</button>
+            </article>
+        </li>
+    </ul>
+</section>
+<section id="css">
+    <h2>CSS</h2>
+    <ul>
+        <li>
+            <article>
+                <h3 id="background">background</h3>
+                <p>specifies the background of an element</p>
+                <p>background: [];</p>
+                <p style="background: red">Text</p>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="opacity">opacity</h3>
+                <p>specifies the opacity/transparency of an element</p>
+                <p>opacity: 0.8;</p>
+                <ul>
+                    <li style="background: green;opacity: 1;display: block;"></li>
+                    <li style="background: green;opacity: 0.9;display: block;"></li>
+                    <li style="background: green;opacity: 0.8;display: block;"></li>
+                    <li style="background: green;opacity: 0.7;display: block;"></li>
+                    <li style="background: green;opacity: 0.6;display: block;"></li>
+                    <li style="background: green;opacity: 0.5;display: block;"></li>
+                </ul>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="line-height">line-height</h3>
+                <p>specifies the height of a line</p>
+                <p>line-height: 1.5;</p>
+                <p style="line-height: 1.5;">Lorem ipsum dolor<br>Lorem ipsum dolor</p>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="text-transform">text-transform</h3>
+                <p>controls the capitalization of text</p>
+                <p>line-height: 1.5;</p>
+                <p><span style="text-transform: uppercase">Lorem</span> ipsum dolor <span
+                        style="text-transform: uppercase">sit amet</span>, consectetur adipiscing elit. <span
+                        style="text-transform: uppercase">Pellentesque</span> metus massa, efficitur eu dignissim eu,
+                    congue non felis.</p>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="border">border</h3>
+                <p>specifies the style of the outline</p>
+                <p>border-bottom: 2px solid #666;</p>
+                <p style="background: gray;border-bottom: 2px solid #666;">Text</p>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="font-size">font-size</h3>
+                <p>specifies the font size of the item. %,px, rem, inherit</p>
+                <p>font-size: 24px;</p>
+                <p style="font-size: 24px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+        </li>
+    </ul>
+</section>
+<section id="protocols">
+    <h2>Protocols</h2>
+    <ul>
+        <li>
+            <article>
+                <h3 id="http-methods">HTTP methods</h3>
+                <p>GET - Метод GET запрашивает представление ресурса. Запросы с использованием этого метода могут только
+                    извлекать данные.</p>
+                <p>POST - POST используется для отправки сущностей к определённому ресурсу. Часто вызывает изменение
+                    состояния или какие-то побочные эффекты на сервере.</p>
+                <p>PUT - PUT заменяет все текущие представления ресурса данными запроса.</p>
+                <p>DELETE - DELETE удаляет указанный ресурс.</p>
+                <p>PATCH - PATCH используется для частичного изменения ресурса.</p>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="status-code">HTTP status code</h3>
+                <p>1xx: Informational<br>example: 100 Continue</p>
+                <p>2xx: Success<br>example: 201 Created</p>
+                <p>3xx: Redirection<br>example: 301 Moved Permanently</p>
+                <p>4xx: Client Error<br>example: 404 Not Found</p>
+                <p>5xx: Server Error<br>example: 500 Internal Server Error</p>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="dns">DNS list by types</h3>
+                <p>A record - The record that holds the IP address of a domain. Learn more about the A record.</p>
+                <p>AAAA record - The record that contains the IPv6 address for a domain (as opposed to A records, which
+                    list the IPv4 address). Learn more about the AAAA record.</p>
+                <p>CNAME record - Forwards one domain or subdomain to another domain, does NOT provide an IP address.
+                    Learn more about the CNAME record.</p>
+                <p>MX record - Directs mail to an email server. Learn more about the MX record.</p>
+                <p>TXT record - Lets an admin store text notes in the record. These records are often used for email
+                    security. Learn more about the TXT record.</p>
+                <p>NS record - Stores the name server for a DNS entry. Learn more about the NS record.</p>
+                <p>SOA record - Stores admin information about a domain. Learn more about the SOA record.</p>
+                <p>SRV record - Specifies a port for specific services. Learn more about the SRV record.</p>
+                <p>PTR record - Provides a domain name in reverse-lookups. Learn more about the PTR record.</p>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3 id="identify-ip">Identifying google's IP</h3>
+                <p>To identify google.com IP, follow the next steps:</p>
+                <ol>
+                    <li>open Terminal</li>
+                    <li>paste and run the command nslookup google.com</li>
+                </ol>
+                <p>As result, you will receive "name" and "address":<br>Name: google.com.ua<br>Address: 216.58.215.99
+                </p>
+                <p>Repeat steps 1 and 2 to identify google.com.ua IP</p>
+            </article>
+        </li>
+    </ul>
+</section>
+
+
+</body>
+</html>

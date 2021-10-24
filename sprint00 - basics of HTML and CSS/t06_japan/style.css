@@ -1,0 +1,16 @@
+.japan {
+    border: 3px solid #cccccc;
+    display: flex;
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+.japan:before {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 400px;
+    background: #ad2433;
+    border-radius: 50%;
+}

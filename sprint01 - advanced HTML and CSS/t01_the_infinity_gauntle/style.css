@@ -1,0 +1,44 @@
+.list-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 20px;
+}
+
+.list-container > li {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-icons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-icons li {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+}
+
+.image {
+    transition: all 0.3s;
+    opacity: 1;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.image:hover {
+    opacity: 0.7;
+}
+
+.image:hover + .list-container > li:nth-child(2n+1) .list-icons li:nth-child(2n+1),
+.image:hover + .list-container > li:nth-child(2n) .list-icons li:nth-child(2n) {
+    visibility: hidden;
+}

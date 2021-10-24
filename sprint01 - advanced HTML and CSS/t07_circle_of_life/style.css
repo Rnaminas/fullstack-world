@@ -1,0 +1,58 @@
+.circle {
+    background: green;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    -moz-animation: 4s linear 0s infinite alternate move_circle;
+    -o-animation: 4s linear 0s infinite alternate move_circle;
+    animation: 4s linear 0s infinite alternate move_circle;
+    display: flex;
+    flex-grow: 0;
+    transition: all 0.2s;
+}
+
+.circle:hover {
+    background: red;
+}
+
+.circle_wrapper {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+}
+
+@-webkit-keyframes move_circle {
+    from {
+        transform: translateX(0vw)
+    }
+    to {
+        transform: translateX(84vw)
+    }
+}
+
+@-moz-keyframes move_circle {
+    from {
+        transform: translateX(0vw)
+    }
+    to {
+        transform: translateX(84vw)
+    }
+}
+
+@-o-keyframes move_circle {
+    from {
+        transform: translateX(0vw)
+    }
+    to {
+        transform: translateX(84vw)
+    }
+}
+
+@keyframes move_circle {
+    from {
+        transform: translateX(0vw)
+    }
+    to {
+        transform: translateX(84vw)
+    }
+}
