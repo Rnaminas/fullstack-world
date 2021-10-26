@@ -1,0 +1,64 @@
+.slider {
+	display: flex;
+}
+
+.slider__arrow {
+	background: #e0e0e0;
+	width: 40px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.slider__arrow button {
+	position: absolute;
+	top: 50%;
+	background: transparent;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.slider__arrow:not(.disable) button:hover:before {
+	color: silver;
+}
+
+.slider__arrow.disable button {
+	opacity: 0.5;
+	cursor: unset;
+}
+
+.slider__arrow button:before {
+	content: '\27A4';
+	font-size: 24px;
+	line-height: 24px;
+	color: white;
+	display: block;
+}
+
+.slider__arrow--prev {
+	transform: rotate(180deg);
+}
+
+.slider__content__item {
+	width: 600px;
+	display: block;
+	min-width: 600px;
+}
+
+.slider__content {
+	max-width: 600px;
+	overflow-x: hidden;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+}
