@@ -1,0 +1,45 @@
+ul {
+    display: block;
+}
+
+.square {
+    display: block;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    margin: 50px auto;
+    cursor: grab;
+    border: 4px dashed black;
+}
+
+.square:focus, .square:active {
+    cursor: grab;
+}
+
+.yellow {
+    background: #d7c451;
+}
+
+.purple {
+    background: #a64dd7;
+}
+
+.green {
+    background: #45d864;
+}
+
+.blue {
+    background: #0984d7;
+}
+
+.pink {
+    background: #d7577b;
+}
+
+.red {
+    background: #d63b53;
+}
+
+.drag {
+    border-color: transparent;
+}
