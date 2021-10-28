@@ -1,0 +1,108 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.calculator-section {
+    background: #5b73d7;
+}
+
+section {
+    background: #5b73d7;
+    padding: 100px 0;
+}
+
+form {
+    border-radius: 6px;
+    width: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px 5px #00000045;
+    overflow: hidden;
+}
+
+.result-list {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0;
+    padding: 20px 0;
+    height: auto;
+    margin: 0;
+}
+
+.result,
+.history_operations {
+    width: 100%;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    text-align: right;
+    cursor: unset;
+}
+
+.result {
+    color: #5a90df;
+    font-size: 50px;
+}
+
+.history_operations {
+    color: #7f7f7f;
+    font-size: 24px;
+}
+
+.buttons-list {
+    background: linear-gradient(to right, #577be0, #5e6edf);
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    max-width: 480px;
+    outline: 0;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.buttons-list__item,
+.result-list__item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.operation-button,
+.submit_button {
+    border: 1px solid #7282a9;
+    margin: 0;
+    outline: 0;
+    width: 120px;
+    height: 120px;
+    color: white;
+    font-size: 36px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.operation-button:hover {
+    background: #71747e;
+    border: 1px solid #71747e;
+    box-shadow: 1px 3px 10px 1px #00000047;
+}
+
+.submit_button {
+    width: 240px;
+    height: 120px;
+    background: #67cba2;
+    border: 0;
+}
+
+.submit_button:hover {
+    background: #88e5bf;
+}
