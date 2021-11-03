@@ -1,7 +1,41 @@
 class Calculator {
-    constructor() {
-        this.inputValue = '';
-        this.resultValue = '0';
+    calculate(numbersArray, operationArray) {
+        console.log(numbersArray);
+        console.log(operationArray);
+        let result;
+        if (operationArray) {
+            result = numbersArray[0];
+            operationArray.forEach(function (item, key) {
+                let i = key + 1;
+                if (result) {
+                    switch (item) {
+                        case '+':
+                            result = result + numbersArray[i];
+                            break;
+                        case '-':
+                            result = result - numbersArray[i];
+                            break;
+                        case '*':
+                            result = result * numbersArray[i];
+                            break;
+                        case '÷':
+                            result = result / numbersArray[i];
+                            break;
+                        case '%':
+                            result = (result * numbersArray[i]) / 100;
+                            break;
+                    }
+                }
+            });
+        } else {
+            result = 0;
+        }
+
+        function isFloat(n) {
+            return Number(n) === n && n % 1 !== 0;
+        }
+
+        return isFloat(result) ? parseFloat(result).toFixed(6) : result;
     }
 
     initMarkup() {
@@ -40,6 +74,16 @@ class Calculator {
             button.type = 'button';
             button.value = item;
             button.classList.add('operation-button');
+            button.addEventListener('click', function (event) {
+                if (item === 'C') {
+                    inputValue.value = '';
+                    inputResult.value = 0;
+                }
+
+                if (inputResult.value === '0' && item !== 'C') {
+                    inputValue.value += item;
+                }
+            });
             listItemButton.appendChild(button);
             listButtons.appendChild(listItemButton);
         });
@@ -47,6 +91,18 @@ class Calculator {
         listItemButton.classList.add('buttons-list__item');
         const submitButton = document.createElement('button');
         submitButton.innerHTML = '=';
+        submitButton.setAttribute('type', 'button');
+        submitButton.addEventListener('click', function (event) {
+            if (inputResult.value === '0' && inputValue.value !== '') {
+                let inputArray = inputValue.value.split(/[\+\-\÷\-\*\%]/g).map(function (item) {
+                    return parseFloat(item);
+                });
+                let inputOperations = inputValue.value.split(/[0-9]/).filter(function (el) {
+                    return (el !== "" && el !== ".");
+                });
+                inputResult.value = Calculator.prototype.calculate(inputArray, inputOperations);
+            }
+        });
         submitButton.classList.add('submit_button');
         listItemButton.appendChild(submitButton);
         listButtons.appendChild(listItemButton);
@@ -55,9 +111,16 @@ class Calculator {
         form.appendChild(listButtons);
         section.appendChild(form);
         body.appendChild(section);
-
     }
+
+
+    constructor() {
+        this.inputValue = '';
+        this.resultValue = '0';
+        this.initMarkup();
+    }
+
+
 }
 
 const basicCalculator = new Calculator();
-basicCalculator.initMarkup();
